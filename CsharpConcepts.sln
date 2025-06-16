@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexers", "Indexers\Indexe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterators", "Iterators\Iterators.csproj", "{073B7915-4DE3-4410-93A5-C654B346A2E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{4C444FD3-EA0F-4086-9B04-8FAAA448C89C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{073B7915-4DE3-4410-93A5-C654B346A2E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{073B7915-4DE3-4410-93A5-C654B346A2E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{073B7915-4DE3-4410-93A5-C654B346A2E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C444FD3-EA0F-4086-9B04-8FAAA448C89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C444FD3-EA0F-4086-9B04-8FAAA448C89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C444FD3-EA0F-4086-9B04-8FAAA448C89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C444FD3-EA0F-4086-9B04-8FAAA448C89C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +97,7 @@ Global
 		{1FEBA742-FD5D-4D4E-A97F-3E391EB3F917} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{97D34DFC-21CE-4913-B650-D2FE3EFA6FED} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{073B7915-4DE3-4410-93A5-C654B346A2E5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{4C444FD3-EA0F-4086-9B04-8FAAA448C89C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4877511F-9995-4659-BB90-26159BE55A16}
