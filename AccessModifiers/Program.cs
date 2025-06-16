@@ -8,10 +8,21 @@ namespace AccessModifiers
 {
     internal class Program
     {
-        Person person = new Person("Sachin ", 30);
+        public static void Main(string[] args)
+        {
+            // Create an instance of Person
+            Person person = new Person("Sandip", 30);
 
-       // Person.DisplayInfo(); // This will call the public method to display information about the person
+            // Display person's information
+            person.DisplayInfo();
 
-        
+            // Access public member
+            Console.WriteLine($"Name: {person.Name}");
+
+            // The following lines would cause compile-time errors due to access modifiers
+            // Console.WriteLine(person.age); // Error: 'Person.age' is inaccessible due to its protection level
+            // Console.WriteLine(person
+
+        }
     }
 }
