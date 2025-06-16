@@ -1,4 +1,4 @@
-﻿using MyList_Collection;
+﻿using CustomCollection;
 class Program
 {
     public static void Main(string[] args)

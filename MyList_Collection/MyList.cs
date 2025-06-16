@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyList_Collection
+namespace CustomCollection
 {
     internal class MyList
     {
