@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new() { Title = "My API", Version = "v1" });
 });
-builder.Services.AddDbContext<DNC_DbContext>(options =>
+builder.Services.AddDbContext<DNCDbContext>(options =>
     options.UseInMemoryDatabase("dncDb"));
 
 var app = builder.Build();
