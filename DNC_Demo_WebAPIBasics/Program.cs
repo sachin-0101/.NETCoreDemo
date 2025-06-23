@@ -14,15 +14,18 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new() { Title = "My API", Version = "v1" });
 });
+//builder.Services.AddDbContext<DNCDbContext>(options =>
+//    options.UseInMemoryDatabase("dncDb"));    // for test in memory database
+
 builder.Services.AddDbContext<DNCDbContext>(options =>
-    options.UseInMemoryDatabase("dncDb"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));  // for SQL Server database
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    // ✅ Enable Swagger in Development mode
+    // Enable Swagger in Development mode
     app.UseSwagger();
     app.UseSwaggerUI();
 }
