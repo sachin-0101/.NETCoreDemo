@@ -1,0 +1,6 @@
+@DNC_Demo_WebAPIBasics_HostAddress = http://localhost:5024
+
+GET {{DNC_Demo_WebAPIBasics_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
