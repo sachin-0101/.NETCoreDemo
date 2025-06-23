@@ -9,8 +9,7 @@ namespace DNC_Demo_WebAPIBasics.Models
     public class Product
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]        
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Product name is required.")]

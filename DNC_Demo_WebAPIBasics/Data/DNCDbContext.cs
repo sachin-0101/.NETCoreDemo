@@ -13,5 +13,8 @@ namespace DNC_Demo_WebAPIBasics.Data
         {           
             base.OnModelCreating(modelBuilder);
         }
+        public DbSet<DNC_Demo_WebAPIBasics.Models.Users> Users { get; set; } = default!;
+        public DbSet<DNC_Demo_WebAPIBasics.Models.Categories> Categories { get; set; } = default!;
+        public DbSet<DNC_Demo_WebAPIBasics.Models.Customers> Customers { get; set; } = default!;
     }
 }
