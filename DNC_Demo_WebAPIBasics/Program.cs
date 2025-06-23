@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder; 
+using  DNC_Demo_WebAPIBasics.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,8 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new() { Title = "My API", Version = "v1" });
 });
+builder.Services.AddDbContext<DNC_DbContext>(options =>
+    options.UseInMemoryDatabase("dncDb"));
 
 var app = builder.Build();
 
